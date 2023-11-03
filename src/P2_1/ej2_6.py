@@ -5,7 +5,8 @@
 #grupo a hombres de ñ - z
 #grupo a mujeres de a - l
 def grupo(sexo,nombre):
-    nombre = nombre.replace("","")[0]
+    nombre = nombre.lower().replace("","")[0]
+    print(nombre)
     lista_a_HOMBRES = ["ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
     lista_a_MUJERES = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "l"]
     if sexo == "hombre" and nombre in lista_a_HOMBRES :
@@ -15,6 +16,11 @@ def grupo(sexo,nombre):
     else:
         return "perteneces al grupo B"
 
-nombre = input("introduce tu nombre: ")
-sexo = input("introduce tu sexo(hombre/mujer): ")
-print(grupo(sexo,nombre))
+
+def main():
+    nombre = input("introduce tu nombre: ")
+    sexo = input("introduce tu sexo(hombre/mujer): ")
+    print(grupo(sexo,nombre))
+
+if __name__ =="__main__":
+    main()

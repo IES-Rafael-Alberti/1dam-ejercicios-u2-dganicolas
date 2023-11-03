@@ -9,6 +9,9 @@ def hacienda_roba_V2 (IRPF):
         return "te quito un 30% master"
     else:
         return "te quito un 45% master, y me parece poco"
+def main():
+    sueldo = int(input("pon tu sueldo y te robo una parte: "))
+    print(hacienda_roba_V2(sueldo))
 
-sueldo = int(input("pon tu sueldo y te robo una parte: "))
-print(hacienda_roba_V2(sueldo))
+if __name__=="__main__":
+    main()

@@ -4,5 +4,10 @@ def parimpar (num1):
         return "el numero es par"
     else:
         return "el numero es impar"
-numero1=float(input("dame un numero: "))
-print(parimpar(numero1))
+
+def main():
+    numero1=float(input("dame un numero: "))
+    print(parimpar(numero1))
+
+if __name__ == "__main__":
+    main()

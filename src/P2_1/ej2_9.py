@@ -6,5 +6,10 @@ def cuanto_dinero (pagame):
     else:
         return "tu pagas 10€"
 
-edad =int(input("dime tu edad: "))
-print(cuanto_dinero(edad))
+
+def main():
+    edad =int(input("dime tu edad: "))
+    print(cuanto_dinero(edad))
+
+if __name__=="__main__":
+    main()
